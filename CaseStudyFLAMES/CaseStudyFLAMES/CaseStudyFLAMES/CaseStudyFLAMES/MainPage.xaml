@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CaseStudyFLAMES.MainPage">
+    <ScrollView>
+        <Grid>
+            <Image Source="main3.jpg" Aspect="AspectFill" />
+            <StackLayout>
+                <Frame BackgroundColor="IndianRed" Padding="24" BorderColor="Black" CornerRadius="10" Margin="10, 10, 10, 10">
+                    <Label Text="F.L.A.M.E.S." HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+                </Frame>
+                <Frame BackgroundColor="LightPink" CornerRadius="10" Margin="10, 10, 10, 10">
+                    <StackLayout>
+                        <Label Text="Your name: " VerticalOptions="Center"/>
+                        <Entry x:Name="Name" HorizontalOptions="FillAndExpand" />
+                    </StackLayout>
+                </Frame>
+
+                <Frame BackgroundColor="LightPink" CornerRadius="10" Margin="10, 10, 10, 10">
+                    <StackLayout>
+                        <Label Text="Your partner's name: " VerticalOptions="Center"/>
+                        <Entry x:Name="Partner" HorizontalOptions="FillAndExpand" />
+                    </StackLayout>
+                </Frame>
+
+                <Button x:Name="FlamesButton" Text="Calculate FLAMES" BackgroundColor="HotPink" BorderColor="Black" BorderWidth="3" HorizontalOptions="Center" Clicked="FlamesButton_Clicked" />
+                <Label x:Name="Result" FontSize="28" FontAttributes="Bold" TextColor="Black" HorizontalTextAlignment="Center"/>
+                <Label x:Name="FinalResult" FontSize="20" FontAttributes="Bold" TextColor="Black" HorizontalTextAlignment="Center"/>
+                <StackLayout>
+                    <Button x:Name="AboutButton" Text="About" TextColor="White" BackgroundColor="DeepPink" BorderColor="Black" BorderWidth="3" HorizontalOptions="Center" Clicked="AboutButton_Clicked" />
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+        
+    </ScrollView>
+</ContentPage>
